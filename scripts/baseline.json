@@ -1,0 +1,462 @@
+﻿{
+    "CapturedAt":  "2026-10-16T14:45:48.8468619+09:00",
+    "GitStatus":  [
+                      "A  .editorconfig",
+                      "A  .gitignore",
+                      "A  .prettierrc",
+                      "A  .vscode/extensions.json",
+                      "A  .vscode/launch.json",
+                      "A  .vscode/tasks.json",
+                      "A  README.md",
+                      "A  angular.json",
+                      "A  package-lock.json",
+                      "A  package.json",
+                      "A  public/favicon.ico",
+                      "AM src/app/app.config.ts",
+                      "A  src/app/app.css",
+                      "AM src/app/app.html",
+                      "AM src/app/app.routes.ts",
+                      "A  src/app/app.spec.ts",
+                      "AM src/app/app.ts",
+                      "A  src/index.html",
+                      "A  src/main.ts",
+                      "A  src/styles.css",
+                      "A  tsconfig.app.json",
+                      "A  tsconfig.json",
+                      "A  tsconfig.spec.json",
+                      "?? src/app/auth/auth-interceptor.spec.ts",
+                      "?? src/app/auth/auth-interceptor.ts",
+                      "?? src/app/auth/auth.service.ts",
+                      "?? src/app/auth/auth.spec.ts",
+                      "?? src/app/auth/login/login.css",
+                      "?? src/app/auth/login/login.html",
+                      "?? src/app/auth/login/login.spec.ts",
+                      "?? src/app/auth/login/login.ts",
+                      "?? src/app/orders/order-action.ts",
+                      "?? src/app/orders/order-detail/order-detail.css",
+                      "?? src/app/orders/order-detail/order-detail.html",
+                      "?? src/app/orders/order-detail/order-detail.spec.ts",
+                      "?? src/app/orders/order-detail/order-detail.ts",
+                      "?? src/app/orders/order-list/order-list.css",
+                      "?? src/app/orders/order-list/order-list.html",
+                      "?? src/app/orders/order-list/order-list.spec.ts",
+                      "?? src/app/orders/order-list/order-list.ts",
+                      "?? src/app/orders/order-status-label.ts",
+                      "?? src/app/orders/order-status.ts",
+                      "?? src/app/orders/order.model.ts",
+                      "?? src/app/orders/order.service.ts",
+                      "?? src/app/products/create-product.model.ts",
+                      "?? src/app/products/product-create/product-create.css",
+                      "?? src/app/products/product-create/product-create.html",
+                      "?? src/app/products/product-create/product-create.spec.ts",
+                      "?? src/app/products/product-create/product-create.ts",
+                      "?? src/app/products/product-detail/product-detail.css",
+                      "?? src/app/products/product-detail/product-detail.html",
+                      "?? src/app/products/product-detail/product-detail.spec.ts",
+                      "?? src/app/products/product-detail/product-detail.ts",
+                      "?? src/app/products/product-edit/product-edit.css",
+                      "?? src/app/products/product-edit/product-edit.html",
+                      "?? src/app/products/product-edit/product-edit.spec.ts",
+                      "?? src/app/products/product-edit/product-edit.ts",
+                      "?? src/app/products/product-list/product-list.css",
+                      "?? src/app/products/product-list/product-list.html",
+                      "?? src/app/products/product-list/product-list.spec.ts",
+                      "?? src/app/products/product-list/product-list.ts",
+                      "?? src/app/products/product.model.ts",
+                      "?? src/app/products/product.service.ts",
+                      "?? src/app/products/update-product.model.ts",
+                      "?? src/app/shared/components/cart/cart.css",
+                      "?? src/app/shared/components/cart/cart.html",
+                      "?? src/app/shared/components/cart/cart.spec.ts",
+                      "?? src/app/shared/components/cart/cart.ts",
+                      "?? src/app/shared/components/confirm-dialog/confirm-dialog.css",
+                      "?? src/app/shared/components/confirm-dialog/confirm-dialog.html",
+                      "?? src/app/shared/components/confirm-dialog/confirm-dialog.spec.ts",
+                      "?? src/app/shared/components/confirm-dialog/confirm-dialog.ts",
+                      "?? src/app/shared/components/error-message/error-message.css",
+                      "?? src/app/shared/components/error-message/error-message.html",
+                      "?? src/app/shared/components/error-message/error-message.spec.ts",
+                      "?? src/app/shared/components/error-message/error-message.ts",
+                      "?? src/app/shared/interceptors/error-interceptor.spec.ts",
+                      "?? src/app/shared/interceptors/error-interceptor.ts",
+                      "?? src/app/shared/model/cart.model.ts",
+                      "?? src/app/shared/model/currency-label.ts",
+                      "?? src/app/shared/model/currency.ts",
+                      "?? src/app/shared/model/dialog-options.ts",
+                      "?? src/app/shared/model/dialog-result.ts",
+                      "?? src/app/shared/model/paginated-result.ts",
+                      "?? src/app/shared/model/pagination-request.ts",
+                      "?? src/app/shared/services/cart.service.ts",
+                      "?? src/app/shared/services/cart.spec.ts",
+                      "?? src/app/shared/services/dialog.service.ts",
+                      "?? src/app/shared/services/dialog.spec.ts",
+                      "?? src/app/shared/services/error.service.ts",
+                      "?? src/app/shared/services/error.spec.ts"
+                  ],
+    "Files":  [
+                  {
+                      "Path":  ".editorconfig",
+                      "SHA256":  "9DA1D179FA691E796EC7CB26D719E2308A073594B7C7C77756D1BA4560E295BE"
+                  },
+                  {
+                      "Path":  ".gitignore",
+                      "SHA256":  "AE6D22F040C44292C421A5C0715E28B9330B8C26D9F2BF08C7935374C6147967"
+                  },
+                  {
+                      "Path":  ".prettierrc",
+                      "SHA256":  "7BBD911F1AD35A68FD6C04D83C101B4AB1D08C1F8008623C056A27070A735532"
+                  },
+                  {
+                      "Path":  "angular.json",
+                      "SHA256":  "1883D4D641C99D5BF9A2C9F4832C9F339A84A354A2E2B4701771D7C824671055"
+                  },
+                  {
+                      "Path":  "package-lock.json",
+                      "SHA256":  "110B6F67FD917DA012147C33EBA5F1B94DBC04B00799CC93470323BD1CD9E5A7"
+                  },
+                  {
+                      "Path":  "package.json",
+                      "SHA256":  "CCE976DD0E80B7206CF166689E4436302AD9CBDF281DF633ADF43D3C421FF409"
+                  },
+                  {
+                      "Path":  "README.md",
+                      "SHA256":  "8A56EDF76AACB66F9453D47511305FA3047D9DA024701C6B135453336F4415A4"
+                  },
+                  {
+                      "Path":  "tsconfig.app.json",
+                      "SHA256":  "EF0951130D6161F26968E606A4A5B7FA0B72D282E638BCA68364FA154F9B7966"
+                  },
+                  {
+                      "Path":  "tsconfig.json",
+                      "SHA256":  "A4810E927E51717B4811DE61A9C61C7A903ABBCB2862BAA6AADC781CBF6F9ED0"
+                  },
+                  {
+                      "Path":  "tsconfig.spec.json",
+                      "SHA256":  "9B0620ADCB42EF8500DEEE34709D053FEDF51B673321F744EE28436735C98FD8"
+                  },
+                  {
+                      "Path":  ".vscode\\extensions.json",
+                      "SHA256":  "2F13A5BB182525A4150F20E023A17EACB5411EAF6877D60209AC3CEA86AB5C85"
+                  },
+                  {
+                      "Path":  ".vscode\\launch.json",
+                      "SHA256":  "0DD378135C3D394A1E07E9C28AF48EDEA54C5690A805DE42C7DF101D5E195574"
+                  },
+                  {
+                      "Path":  ".vscode\\tasks.json",
+                      "SHA256":  "63D74D916C9875099B559CFAED85A493C9297A7C03805E18132CA383DB045895"
+                  },
+                  {
+                      "Path":  "public\\favicon.ico",
+                      "SHA256":  "F9102BE80297C0529207607BE5277B4F90BCA89D65988FA1771B91C7894E815F"
+                  },
+                  {
+                      "Path":  "src\\index.html",
+                      "SHA256":  "C7BB92B83A5C55C19227F733195EDDED06FD928E6DE9AFC11301E780CAB1A763"
+                  },
+                  {
+                      "Path":  "src\\main.ts",
+                      "SHA256":  "A53D8BF50034149A8D8B171377D40BFA2CB72535F30894AF63A4429355332C76"
+                  },
+                  {
+                      "Path":  "src\\styles.css",
+                      "SHA256":  "824D9D64278C6AAB436940460645EAF3C71C293A82A215FB9EEF60581E358D55"
+                  },
+                  {
+                      "Path":  "src\\app\\app.config.ts",
+                      "SHA256":  "7FC1578B62B303F53CA2989F12F39737318B92D15D85A90278C5A40B0C757F2B"
+                  },
+                  {
+                      "Path":  "src\\app\\app.css",
+                      "SHA256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "src\\app\\app.html",
+                      "SHA256":  "1A8E4F5B052EE484D570E93AA4CE3A1C77F8865C73551FE6879E76C740E6FECF"
+                  },
+                  {
+                      "Path":  "src\\app\\app.routes.ts",
+                      "SHA256":  "7D24E481D5B958AD3B77468F1D3BDF4517D2E1237B81DF7808959FE42C81430D"
+                  },
+                  {
+                      "Path":  "src\\app\\app.spec.ts",
+                      "SHA256":  "C1076492CCCA4FFE9EEDB2633CC4CFCF8E217F2B02E4FB77EF6FB8843E742E4F"
+                  },
+                  {
+                      "Path":  "src\\app\\app.ts",
+                      "SHA256":  "F10CC66C124D8C31F159D0DFFB064CA2C18BDB50F2100EB970DDCF99A87056C0"
+                  },
+                  {
+                      "Path":  "src\\app\\auth\\auth-interceptor.spec.ts",
+                      "SHA256":  "2F1FC6D36F75E1A841D3584DA30C2A32139FEBF408A9AF103E61F0C49E17E6C0"
+                  },
+                  {
+                      "Path":  "src\\app\\auth\\auth-interceptor.ts",
+                      "SHA256":  "1C926093EE7CD7956A156810F5CB4A6B633890270ACC8FEEDF6AADB5EAE74137"
+                  },
+                  {
+                      "Path":  "src\\app\\auth\\auth.service.ts",
+                      "SHA256":  "A344C581675FF0C78B2191D4131A3ED40A462007F3325ACF5610D3832F213CCC"
+                  },
+                  {
+                      "Path":  "src\\app\\auth\\auth.spec.ts",
+                      "SHA256":  "2FFE6982FCB15C65888C6B49A52CC59663AF79EA1A272F75816D2A7BF7F8A89A"
+                  },
+                  {
+                      "Path":  "src\\app\\auth\\login\\login.css",
+                      "SHA256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "src\\app\\auth\\login\\login.html",
+                      "SHA256":  "3D7F5E0419C91EA0A7D6319DC6DF6F53A33A84D6CC931B08B7145E4944064C30"
+                  },
+                  {
+                      "Path":  "src\\app\\auth\\login\\login.spec.ts",
+                      "SHA256":  "1E8670C930BFEF0DAE80DEB8EE6673A1751A0D68090C10EF93761402438F3057"
+                  },
+                  {
+                      "Path":  "src\\app\\auth\\login\\login.ts",
+                      "SHA256":  "08AC377E984EE4E12269E2FD1D5AF9C8ACBC0D0E0F094B641125D82316149A14"
+                  },
+                  {
+                      "Path":  "src\\app\\orders\\order-action.ts",
+                      "SHA256":  "79EC2A69608EBC1E35B576CE738B01DC59082700D54D25B263495D65EE798A4F"
+                  },
+                  {
+                      "Path":  "src\\app\\orders\\order-status-label.ts",
+                      "SHA256":  "FCB8C58993AF4D11777F8061361891B8F2773440D9156AA85FE1F929BA90D27F"
+                  },
+                  {
+                      "Path":  "src\\app\\orders\\order-status.ts",
+                      "SHA256":  "5922FB2A004921AB8F6E4BC14F1A918B6AAB2D4E00BBF2BC07FB0DD66686F470"
+                  },
+                  {
+                      "Path":  "src\\app\\orders\\order.model.ts",
+                      "SHA256":  "55122A65FCFDE55D2047E3591BF90256D104AE62AC1BE84B14B257D161B0BD85"
+                  },
+                  {
+                      "Path":  "src\\app\\orders\\order.service.ts",
+                      "SHA256":  "5DEADF9A1E09DB9CB9F8CBFB11758B9CBDED78A52238CD4444AF12E985C94AF6"
+                  },
+                  {
+                      "Path":  "src\\app\\orders\\order-detail\\order-detail.css",
+                      "SHA256":  "237892E7CFC43D26C61DD5633802F21E86CBE1463BD03662EFF6EBBBAD73A9EB"
+                  },
+                  {
+                      "Path":  "src\\app\\orders\\order-detail\\order-detail.html",
+                      "SHA256":  "65370676BF9AF180DDBAC0ABAFDC6CCC540C5AA68FA5786267754F16E4F40A2C"
+                  },
+                  {
+                      "Path":  "src\\app\\orders\\order-detail\\order-detail.spec.ts",
+                      "SHA256":  "C46A1E8281D35CBAF6F26B969DCFE43FE46847FF41A45545BB02F4A2C6CA2CBE"
+                  },
+                  {
+                      "Path":  "src\\app\\orders\\order-detail\\order-detail.ts",
+                      "SHA256":  "EB024D818684C47FB16A2DD7AF0E3414774198605857101A3BBB7E6201DC47DE"
+                  },
+                  {
+                      "Path":  "src\\app\\orders\\order-list\\order-list.css",
+                      "SHA256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "src\\app\\orders\\order-list\\order-list.html",
+                      "SHA256":  "097C36C785CA6ECB07AD0860BC18D840C687430C51DD5FCFFB5F8119318A3AB0"
+                  },
+                  {
+                      "Path":  "src\\app\\orders\\order-list\\order-list.spec.ts",
+                      "SHA256":  "D73405F3B125361CEB0F40DB0E6AF80241324901BD825C931845E8F8C780596A"
+                  },
+                  {
+                      "Path":  "src\\app\\orders\\order-list\\order-list.ts",
+                      "SHA256":  "831996B0C7D5BA5F1180BD623F6C0687CBC103CB4F433D7D259312EA1981A282"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\create-product.model.ts",
+                      "SHA256":  "9D8F3A3A08699EB6330322808D8AB742734344685CDAF2945B2FB9F32D86CEF4"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product.model.ts",
+                      "SHA256":  "B0EB88EDBF253E5220A2D08F869BF691F134D2B6800BFBE54C3A4B2BCC82B0A9"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product.service.ts",
+                      "SHA256":  "273456A025E8CB354057DE16F65CBF63F04655FA5DE0827FDA869301C881C858"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\update-product.model.ts",
+                      "SHA256":  "DA00C2EFD683C76BA883E54349E36A3EAE27EE9BB47956D3864C0A33B261188C"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-create\\product-create.css",
+                      "SHA256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-create\\product-create.html",
+                      "SHA256":  "FDDF03A856BDEA01516D12EC9FB9578970B3F7FAA38CF82126BAC6C1B31FB370"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-create\\product-create.spec.ts",
+                      "SHA256":  "202385BC788A7933D9631A3CAE3FBDBAC952B90F645EBEAEF223463501D94052"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-create\\product-create.ts",
+                      "SHA256":  "39709812B7E13F0E4B0804E53D19ECBD41ABAC4038AC39F41B1984D4B5653D50"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-detail\\product-detail.css",
+                      "SHA256":  "BBE31476CC66AB5B983FACCBF66B396D4FC90B8F4D63BDA450FDF5D493C9F9CB"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-detail\\product-detail.html",
+                      "SHA256":  "D3F9EA4768282BD48F5F1002A5EA77CDA1CC1543112A3A26BB55190CE75CD838"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-detail\\product-detail.spec.ts",
+                      "SHA256":  "944595C0FB20E705E11CEC6EA6EB90E6291D8B1F5B21E566DDA731FE8C991D34"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-detail\\product-detail.ts",
+                      "SHA256":  "0EE84FA7E95C8A6012128C4EAEFC77F32F445A9A3D3AAF2045B955B5D2716657"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-edit\\product-edit.css",
+                      "SHA256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-edit\\product-edit.html",
+                      "SHA256":  "7D0E2CACD1784515BCF5FC3625D2FF0AEBBB7E73EE880F89E251221AB398EACC"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-edit\\product-edit.spec.ts",
+                      "SHA256":  "52B5AED907A06EDC94E126F6D12654624841DE865F688B27EEEC987463D63117"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-edit\\product-edit.ts",
+                      "SHA256":  "E6DA06217E20D846088F27B2E6E68DE27CF5012B2A65F3B1BF1F4E9B0C0102FD"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-list\\product-list.css",
+                      "SHA256":  "9F4776370A59F9E25A0B7B15D548AF5C22B12DFD0161D9E6FD46316EBF8F1574"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-list\\product-list.html",
+                      "SHA256":  "B818EF3A998FE202839FEF52FE075924F41A19F93CB55691F8071D640A688B43"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-list\\product-list.spec.ts",
+                      "SHA256":  "5D1C3B8C463E5E759DE38BBC02DA36FD6C738AB79D9C072F525415CF28AFB7FE"
+                  },
+                  {
+                      "Path":  "src\\app\\products\\product-list\\product-list.ts",
+                      "SHA256":  "A8D65627E0C36C62CA9F87DF03F508FEA7EED4609C6E70A026FC1A6B20965927"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\components\\cart\\cart.css",
+                      "SHA256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\components\\cart\\cart.html",
+                      "SHA256":  "97296F3DD889664B889B616C397993DFE23E89378BBC3BD42B0AD7A5551E1C14"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\components\\cart\\cart.spec.ts",
+                      "SHA256":  "1A54EBA4E6918B43CAA0A5D3A2BC4D4ECEE4C9546A5DCF17D979546E9CECB32B"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\components\\cart\\cart.ts",
+                      "SHA256":  "175B7C2B8F2D2F6CA77CF1C0642554293C635665A6E36825FBE78E6EE8873DE4"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\components\\confirm-dialog\\confirm-dialog.css",
+                      "SHA256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\components\\confirm-dialog\\confirm-dialog.html",
+                      "SHA256":  "10904A3C559477C4ED7FE7D27804846C3CEBAC94E9D0E7FA4B7C30AE0D890394"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\components\\confirm-dialog\\confirm-dialog.spec.ts",
+                      "SHA256":  "B378887B05AF48475C70A88788797873E897C0AC7C3D13E5F5DAC47F1E250AD6"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\components\\confirm-dialog\\confirm-dialog.ts",
+                      "SHA256":  "5F6088ED69CADFC93DA3F8F0BD065EF3F643938766E46BEB733103B874C30DBF"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\components\\error-message\\error-message.css",
+                      "SHA256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\components\\error-message\\error-message.html",
+                      "SHA256":  "9B942DE8BC7DE19B2FB47CE4BE4154EEA6B7E2F69F7FAD32C811AC23CEE1FFCC"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\components\\error-message\\error-message.spec.ts",
+                      "SHA256":  "FAEEDEB8343DF04D6DAAE184B42C608F2E784481F58E494F5E4C75FC89B91F2E"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\components\\error-message\\error-message.ts",
+                      "SHA256":  "A6A6F2E31F3CBE83E48BE88F4F3DA71B8A153EB61AD3A92B5B7A5AACEF36FF82"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\interceptors\\error-interceptor.spec.ts",
+                      "SHA256":  "D3E898F98F6E70D442348249640A0ED2A550D0C5B0DBD40632C6F58B383C6DAC"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\interceptors\\error-interceptor.ts",
+                      "SHA256":  "D1922EC8690A670F51131E911A359856E00E28092BD80CF034217DC2B3A0045B"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\model\\cart.model.ts",
+                      "SHA256":  "17AB0C1173F763A73EA093D5383275E327537CC267A50D9769BC4F9C6B3D3070"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\model\\currency-label.ts",
+                      "SHA256":  "610A4A504F49B09BF707A6D8E0C722C0EFF9B65A1C87397C04953B62B7D70118"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\model\\currency.ts",
+                      "SHA256":  "B1ABF71181979BCF4517E0C9BE8E25C8C28D8FE62F10A3203624BFE96D58061F"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\model\\dialog-options.ts",
+                      "SHA256":  "099F1530425A3AAE5BB232C027A62F1C0F1E9D6C21D26B94F886759D9DBDBCC2"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\model\\dialog-result.ts",
+                      "SHA256":  "E9D64AF07DE3A3F25BC6E74B6E87E7AE3CB4C14F4C7454E6825C2041937FC54C"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\model\\paginated-result.ts",
+                      "SHA256":  "E0D4E3C7AF484DCAA8A317C6C2033DA2A8C8018C4BC37CB3CD8B85B5ADB3F5E5"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\model\\pagination-request.ts",
+                      "SHA256":  "D3D4DC059846BAA0DBD56ED5B0954321B5DDB4009A33D059615C17E03A79E3A2"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\services\\cart.service.ts",
+                      "SHA256":  "798517E6E7E6D9D799F0A8AC56AFDFF91EE4A9B5EBD793D0ED1E39D1A3C2683C"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\services\\cart.spec.ts",
+                      "SHA256":  "4366E36D5BE075A69AE68EC576A8F254ED48C9C523E73A19E860451A6A90CD68"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\services\\dialog.service.ts",
+                      "SHA256":  "080FDC9657C1BD639A9F0442DA2A6A2AAC55241E4498E44EF9738921058F6FCD"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\services\\dialog.spec.ts",
+                      "SHA256":  "0EF51D2738852AE2213C47E8E1FC1187395E075C1645A06F6CD1C53F0DFC0643"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\services\\error.service.ts",
+                      "SHA256":  "52FEAD2E012EA836C56BA1458001050F28F39F871B2B94DF24E01C85E00FB506"
+                  },
+                  {
+                      "Path":  "src\\app\\shared\\services\\error.spec.ts",
+                      "SHA256":  "881FDD81773F5BB97F0C292B58518F1C41C817F892937362E4E34C7A0E894B78"
+                  }
+              ]
+}

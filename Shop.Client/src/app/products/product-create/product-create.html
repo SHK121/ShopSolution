@@ -1,0 +1,37 @@
+<h2>Create Product</h2>
+
+
+<input 
+  [(ngModel)]="product.name"
+  placeholder="Name"
+/>
+
+
+<input
+  type="number"
+  [(ngModel)]="product.price"
+  placeholder="Price"
+/>
+
+
+<input
+  [(ngModel)]="product.currency"
+  placeholder="Currency"
+/>
+
+
+<input
+  type="number"
+  [(ngModel)]="product.stock"
+  placeholder="Stock"
+/>
+
+
+<textarea
+  [(ngModel)]="product.description">
+</textarea>
+
+
+<button (click)="save()">
+ Create
+</button>

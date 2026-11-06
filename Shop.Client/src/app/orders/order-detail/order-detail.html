@@ -1,0 +1,77 @@
+@if (loading()) {
+    <p>Loading...</p>
+} @else if (order(); as currentOrder) {
+    <div class="order-detail">
+        <section class="order-info">
+            <!-- Order ID, Status, Created At-->
+            <p>Order ID: {{ currentOrder.id }}</p>
+            <p>Status: {{ getOrderStatusLabel(currentOrder.status) }}</p>
+            <p>Created At : {{currentOrder.createdAt | date:'short'}}</p>
+            <p>Total Price: {{getTotalPrice()}} {{getOrderCurrencyLabel(currentOrder.orderCurrency)}}</p>
+        </section>
+
+        <section class="order-actions">
+            <!-- Submit / Pay / Cancel / Ship -->
+            @if(currentOrder.status === OrderStatus.Draft) {
+                <button (click)="submitOrder()">Submit</button>
+            }
+            @if(currentOrder.status === OrderStatus.Submitted) {
+                <button (click)="payOrder()">Pay</button>
+                <button (click)="cancelOrder()">Cancel</button>
+            }
+
+            @if(currentOrder.status === OrderStatus.Paid) {
+                <button (click)="shipOrder()">Ship</button>
+            }
+        </section>
+
+        <section class="order-items">
+            <!--@for-->
+            @for(item of currentOrder.items; track item.productId) {
+                <div class="order-item">
+                    <div>
+                        <strong>Product id </strong>
+                        {{item.productId}}
+                    </div>
+                    <div>
+                        <strong>Product Name</strong>
+                        {{item.productName}}
+                    </div>
+                    <div>
+                        <strong>Unit Price</strong>
+                        {{ item.unitPriceAmount }} {{getOrderCurrencyLabel(item.currency)}}
+                    </div>
+                    <div>
+                        <strong>Quantity</strong>
+                        {{item.quantity}}
+                    </div>
+                    <div>
+                        <strong>Total Price</strong>
+                        {{item.totalPrice}}
+                    </div>
+
+                    @if (productsById()[item.productId]; as currentProduct) {
+                        <div>
+                            <strong>Current Stock</strong>
+                            {{currentProduct.stock}}
+                        </div>
+                        @if (currentProduct.stock < item.quantity) {
+                            <p class="stock-warning">
+                                Insufficient stock!
+                                {{currentProduct.stock}} available,
+                                {{item.quantity - currentProduct.stock}} more required.
+                            </p>
+                        } @else {
+                            <p>Current stock information unavailable.</p>
+                        }
+                    }
+                </div>
+            }
+        </section>
+    </div>
+} @else {
+    <p>Order not found.</p>
+}
+<button routerLink="/orders">
+    Back to Orders
+</button>

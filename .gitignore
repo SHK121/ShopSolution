@@ -1,0 +1,27 @@
+﻿# Secrets
+.env
+.env.*
+
+# Database backups
+docker-backups/
+*.bak
+*.mdf
+*.ldf
+
+# Visual Studio / .NET
+.vs/
+bin/
+obj/
+TestResults/
+*.user
+*.suo
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+coverage/
+
+# IDE
+.idea/
+.vscode/

@@ -1,0 +1,47 @@
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Developer
+      MSSQL_SA_PASSWORD: ${SA_PASSWORD:?SA_PASSWORD is required}
+    ports:
+      - "1434:1433"
+    volumes:
+      - sql-data:/var/opt/mssql
+    networks:
+      - shop-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P \"$$MSSQL_SA_PASSWORD\" -C -Q \"SELECT 1\" -b -o /dev/null || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: shop-api:latest
+    environment:
+      Jwt__Key: ${JWT_KEY:?JWT_KEY is required}
+      ASPNETCORE_URLS: "http://+:8080"
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Data Source=db,1433;Initial Catalog=ShopDb;User ID=sa;Password=${SA_PASSWORD};Encrypt=False;Trust Server Certificate=True"
+    ports:
+      - "8081:8080"
+    networks:
+      - shop-network
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  sql-data:
+
+networks:
+  shop-network:
+    external: true
+    name: shop-network

@@ -1,0 +1,46 @@
+<h2>Edit Product</h2>
+<button type="button" (click)="goBack()">
+    <- Go Back
+</button>
+
+@if (loading() && !product()) {
+    <p>Loading...</p>
+} @else if(product(); as p){
+
+<div>
+
+<label>Name</label>
+<input [(ngModel)]="p.name">
+
+
+<label>Price</label>
+<input 
+type="number"
+[(ngModel)]="p.price">
+
+
+<label>Currency</label>
+<input [(ngModel)]="p.currency">
+
+
+<label>Stock</label>
+<input
+type="number"
+[(ngModel)]="p.stock">
+
+
+<label>Description</label>
+<textarea
+[(ngModel)]="p.description">
+</textarea>
+
+
+<button (click)="update()"
+    [disabled]="loading()">
+    {{ loading() ? 'Updating...' : 'Update' }}
+</button>
+
+
+</div>
+
+}

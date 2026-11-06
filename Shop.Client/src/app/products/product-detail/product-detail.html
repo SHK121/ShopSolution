@@ -1,0 +1,29 @@
+@if (loading()) {
+    <p>Loading product...</p>
+} @else if(product()) {
+    <div class="product-detail">
+        <h2>{{ product()!.name }}</h2>
+        <p>
+            Price: {{ product()!.price }} {{ product()!.currency }}
+        </p>
+        <p>
+            Stock: {{ product()!.stock }}
+        </p>
+
+        @if (product()!.description) {
+            <p>{{ product()!.description }}</p>
+        }
+
+        <div class="product-actions">
+            <a [routerLink]="['/products/edit', product()!.id]">
+                Edit Product
+            </a>
+            <a routerLink ="/products">
+                Back to Products
+            </a>
+        </div>
+    </div>
+} @else {
+    <p>Product not found</p>
+    <a routerLink="/products">Back to Products</a>
+}

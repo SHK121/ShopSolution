@@ -1,0 +1,66 @@
+@if (loading()) {
+  <p>Loading...</p>
+} @else {
+    <a routerLink="/products/create">
+      Create Product
+    </a>
+
+    <div class="pagination">
+      <button 
+        (click)="goToPage(paginationRequest.page - 1)"
+        [disabled]="paginationRequest.page <= 1">
+        <
+      </button>
+
+      @for (page of pageNumbers(); track page) {
+        <button 
+          (click)="goToPage(page)"
+          [class.active]="page === paginationRequest.page">
+          {{ page }}
+        </button>
+      }
+
+      <button
+        (click)="goToPage(paginationRequest.page + 1)"
+        [disabled]="paginationRequest.page >= paginatedResult().totalPages">
+        >
+      </button>
+
+      <span>
+        Page {{ paginationRequest.page }}
+        of {{ paginatedResult().totalPages }}
+      </span>
+    </div>
+
+    <ul class="product-list">
+      @for (product of paginatedResult().items; track product.id) {
+        <li class="product-card">
+          <h3>{{ product.name }}</h3>
+          <p>
+            Price:
+            {{ product.price }}
+            {{ product.currency }}
+          </p>
+          <p>
+            Stock: {{ product.stock }}
+          </p>
+          @if (product.description) {
+            <p>{{ product.description }}</p>
+          }
+          <div class="product-actions">
+            <a [routerLink]="['/products', product.id]">Detail</a>
+            <a [routerLink]="['/products/edit', product.id]">Edit</a>
+            <button (click)="delete(product.id)">Delete</button>
+          </div>
+          <div class="cart-actions">
+            <input type="number"
+              [(ngModel)]="quantities[product.id]"
+              min="1"/>
+            <button (click)="addToCart(product.id)">Add To Cart</button>
+          </div>
+          <!--<button (click)="testAddToCart(product.id)">Test Add</button>-->
+        </li>
+      }
+    </ul>
+    <a routerLink="/cart">Go to Cart</a>
+}

@@ -1,0 +1,47 @@
+@if (loading()) {
+    <p>Loading...</p>
+} @else {
+    <h2>My orders</h2>
+    <p>
+        Total orders: {{ orders().totalCount  }}
+    </p>
+    @if (orders().items.length === 0) {
+        <p>No orders found.</p>
+    } @else {
+        @for (order of orders().items; track order.id) {
+            <div>
+                <strong>Order ID:</strong>
+                {{ order.id }}
+            </div>
+            <a [routerLink]="['/orders', order.id]">
+                View Details
+            </a>
+            <div>
+                <strong>Status:</strong>
+                {{ getOrderStatusLabel(order.status) }}
+            </div>
+            <div>
+                <strong>Created:</strong>
+                {{ order.createdAt | date:'short' }}
+            </div>
+            <hr>
+        }
+
+        <button
+            type="button"
+            (click)="previousPage()"
+            [disabled]="page() === 1">
+            Previous
+        </button>
+
+        <span>
+            Page {{  page()  }} / {{  orders().totalPages  }}
+        </span>
+
+        <button type="button"
+            (click)="nextPage()"
+            [disabled]="page() >= orders().totalPages">
+            Next
+        </button>
+    }
+}
