@@ -21,6 +21,9 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
                 path,
                 optional: false,
                 reloadOnChange: false);
+
+            // Environment variables override JSON settings
+            config.AddEnvironmentVariables();
         });
 
         builder.ConfigureServices((context, services) =>
@@ -33,17 +36,15 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
             {
                 services.Remove(descriptor);
             }
-            var connectionString = context.Configuration.GetConnectionString("DefaultConnection");
+
+            var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
+
+            if (string.IsNullOrWhiteSpace(connectionString))
+            {
+                throw new InvalidOperationException("Test database connection string is missing.");
+            }
 
             services.AddSingleton(_concurrencyInterceptor);
-
-            /*services.AddDbContext<ShopDbContext>(options =>
-            {
-                options.UseSqlServer(connectionString);
-                options.UseSqlServer(
-                    "Server=127.0.0.1,1433;Database=ShopDb_Test;User Id=sa;Password=Shop123!;TrustServerCertificate=True;Encrypt=False;");
-            });*/
-
             services.AddDbContext<ShopDbContext>((sp, options) =>
             {
                 options.UseSqlServer(connectionString);

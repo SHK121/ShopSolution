@@ -7,13 +7,16 @@ public class ShopDbContextFactory : IDesignTimeDbContextFactory<ShopDbContext>
 {
     public ShopDbContext CreateDbContext(string[] args)
     {
-        var optionsBuilder =
-            new DbContextOptionsBuilder<ShopDbContext>();
+        var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
+        if (string.IsNullOrWhiteSpace(connectionString))
+        {
+            throw new InvalidOperationException("Database connection string is missing.");
+        }
 
-        optionsBuilder.UseSqlServer(
-            "Server=localhost,1433;Database=ShopDb;User Id=sa;Password=Shop123!;TrustServerCertificate=True;Encrypt=False;"
-        );
+        var options = new DbContextOptionsBuilder<ShopDbContext>()
+            .UseSqlServer(connectionString)
+            .Options;
 
-        return new ShopDbContext(optionsBuilder.Options);
+        return new ShopDbContext(options);
     }
 }
